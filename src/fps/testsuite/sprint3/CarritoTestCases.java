@@ -100,8 +100,13 @@ public class CarritoTestCases {
 		Header.buscarProducto("JABON BARRA GRISI");
 		CatalogoPage.agregaralCarrito();
 		CatalogoPage.confirmariralcarrito();
+	}
+	
+	@Test (enabled = true)
+	public void agregardosproductos(){
 		
-		
-		
+		Header.gotoMedicamentos();
+		CatalogoPage.agregaralCarrito();
+		CatalogoPage.confirmariralcarrito();
 	}
 }
