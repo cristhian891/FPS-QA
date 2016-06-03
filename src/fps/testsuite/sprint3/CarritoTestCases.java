@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import fps.objectpages.CarritoPage;
 import fps.objectpages.CatalogoPage;
 import fps.objectpages.Header;
-import fps.objectpages.LoginPage;
 import fps.utility.Init;
 import fps.utility.Utility;
 
@@ -83,7 +82,7 @@ public class CarritoTestCases {
 	}
 	
 	//2859
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void TC16_opcionfinalizarcompra(){
 		
 		Header.gotoMedicamentos();
@@ -94,13 +93,20 @@ public class CarritoTestCases {
 		
 	}
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void agregarproductosbuscando(){
 		
 		Header.buscarProducto("JABON BARRA GRISI");
 		CatalogoPage.agregaralCarrito();
 		CatalogoPage.confirmariralcarrito();
 		
+	}
+	
+	@Test (enabled = false)
+	public void verificarcarrito(){
+		
+		Header.gotoMedicamentos();
+		CatalogoPage.agregaralCarrito();
 		
 		
 	}
