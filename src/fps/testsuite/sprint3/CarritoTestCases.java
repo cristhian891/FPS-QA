@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import fps.objectpages.CarritoPage;
 import fps.objectpages.CatalogoPage;
 import fps.objectpages.Header;
-import fps.objectpages.LoginPage;
+
 import fps.utility.Init;
 import fps.utility.Utility;
 
