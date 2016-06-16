@@ -16,11 +16,11 @@ public static WebDriver driver;
 		
 		if(browser.equals("chrome")){
 			
-		File src = new File("/Users/talosdigital/Documents/Testing tools/Selenium/chromedriver");
+		File src = new File("/Users/talosdigital/Documents/Testing_tools/Selenium/chromedriver_2");
 		System.setProperty("webdriver.chrome.driver", src.getAbsolutePath());
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://52.21.204.62:9002/fspstorefront/fspSite/es/MXN/login");
+		driver.navigate().to("https://52.21.204.62:9002/fspstorefront/fspSite/es/MXN/?site=fspSite#");
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		}else if(browser.equals("firefox")){
@@ -29,19 +29,17 @@ public static WebDriver driver;
 		driver.manage().window().maximize();
 		driver.navigate().to("https://52.21.204.62:9002/fspstorefront/fspSite/es/MXN/?site=fspSite#");
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		
 		}else if(browser.equals("phantomjs")){
 			
-		File src = new File("/Users/talosdigital/Documents/Testing tools/PhantomJS/phantomjs-2.1.1-macosx/bin/phantomjs");
+		File src = new File("/Users/talosdigital/Documents/Testing_tools/PhantomJS/phantomjs-2.1.1-macosx/bin/phantomjs");
 		System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
 		driver = new PhantomJSDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://52.21.204.62:9002/fspstorefront/fspSite/es/MXN/login");
+		driver.navigate().to("https://52.21.204.62:9002/fspstorefront/fspSite/es/MXN/?site=fspSite#");
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		}
 	}
-	public static void quit(){
-		
-		driver.quit();
-	}
+	
 }

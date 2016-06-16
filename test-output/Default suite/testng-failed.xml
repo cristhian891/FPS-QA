@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="fps.testsuite.sprint3.CarritoTestCases">
+      <class name="fps.regression_mainsuite.Functional_Sprint3">
         <methods>
-          <include name="agregarproductosbuscando"/>
-          <include name="Iniciar"/>
+          <include name="iniciar"/>
+          <include name="modificarCantidadProducto"/>
+          <include name="terminar"/>
         </methods>
-      </class> <!-- fps.testsuite.sprint3.CarritoTestCases -->
+      </class> <!-- fps.regression_mainsuite.Functional_Sprint3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
